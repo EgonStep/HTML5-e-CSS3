@@ -1,0 +1,80 @@
+/*Transformando elementos usando comando CSS
+
+1) "translate": utilizado para reposicionar um elemento, movendo sua posição no 
+eixo X e Y pelos valores informados.
+
+2) "scale": utilizada para redimensionar um elemento, aceitando valores referentes 
+ao tamanho do elemento -scale(2) dobrará o tamanho de um elemento.
+
+3) "skew": permite distorcer as posições de um elemento, esticando e torcendo
+de acordo com os valores passados.
+
+4) "rotate": usada para rotacionar o angulo dos elementos.
+
+5) "matrix": o mais complexo de todos, permite executar uma matriz de transformações.
+
+*/
+
+/*Alinhas as fotos e realçar os nomes*/
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+}
+
+span {
+    color: #153755;
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*Girar as fotos utilizando rotate*/
+li:nth-child(even) /*Fotos pares*/{
+    transform: rotate(5deg);
+}
+li:nth-child(odd) /*fotos*/{
+    transform: rotate(-5deg);
+}
+
+/*Aumentar o tamanho da foto quando passamos o mouse*/
+li:hover {
+    transform: scale(1.3);
+    z-index: 1;
+}
+
+/*Criamos uma leve animação quando passamos o mouse pelas imagens*/
+li {
+    transition: transform 0.2s linear;
+}
+/*4 diferentes propriedades de transition:
+
+1) "transition-property: para qual propriedade a transição será aplicada.
+É possivel utilizar o valor all para referenciar todas as propriedades do elemento.
+
+2) "transition-duration": A duração que a transição deve ter, em segundos.
+
+3) "transition-timing-function": Como a velocidade da transição deverá ser calculada, os valores mais comuns são linear, 
+ease, ease-in, ease-ou e ease-in-out;
+
+4) "transition-delay": Tempo de espera que precede a transição - geralmente omitimos essa propriedade para utilizar o valor padrão dela, o.
+
+*/
+
+/*Transformações em 3D
+
+1) "translateZ": que assim como seus similares translateX e translateY, permite a reposição dos elementos dentro de um eixo especifico.
+
+2) "rotateX, rotateY": podem ser usadas para rotacionar os elementos nos eixos verticais e horizontais.
+
+3) "perspective": que deixa possivel manipular a perspectiva dos elementos em meio as transformações.
+
+4) "matrix3d, translate3d e rotate3d": versões melhoradas de funçõesque suportão 3D.
+
+*/
