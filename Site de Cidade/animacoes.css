@@ -1,0 +1,79 @@
+/* Formatamos o fundo do BODY e as fontes das palavras (para todos os navegadores, caso tenha uns que não leiam determinada familia
+e deixamo a altura da linha com valor 1.6 */
+body {
+    background: #FFF1D6;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+/*Margem automatica na seção*/
+.container{
+    margin: 0 auto;
+    width: 960px;
+}
+
+/*Formatamos a article com classe place como a cor de fundo, bordas, a cor da bordas e margem e o preenchimento*/
+article {
+    background-color: #FFF;
+    border: 1 px solid #CCC;
+    border-color: #CCC #999 #999 #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: left;
+    width: 650px;
+}
+
+article h2 {
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+}
+
+article a {
+    color: #2C88A7;
+    font-weight: bold;
+}
+article img {
+    border: 1px solid #7E9F19;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+}
+
+h1 a {
+    color: #7E9F19;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    background-color: #7E9F19;
+    color: #FFF;
+}
+
+/*Usamos a class clear para deixar a img dentro do quadrado determinado, é um truque para resolver o problema de estilo da pagina*/
+.clear {
+    clear: both;
+}
+
+/*Vamos criar um estilo para o rodapé*/
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+aside {
+    background-color: #FFFBE4;
+    border: 1px solid #C9BC8F;
+    float: right;
+    padding: 10px;
+    width: 260px;
+}
+
+aside h3 {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+aside ol {
+    font-size: 12px;
+}
+

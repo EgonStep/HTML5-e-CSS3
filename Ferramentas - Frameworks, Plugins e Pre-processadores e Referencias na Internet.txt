@@ -1,0 +1,25 @@
+"Frameworks"
+Twitter Bootstrap - para acelerar o inicio do projeto http://twitter.github.com/bootstrap
+Foundation - similar ao bootstrap http://foundation.zurb.com
+HTML Kickstart http://www.99lime.com
+Skeleton - um toolkit minimalista, possui grid responsivo e alguns componentes simples como botoes e abas http://getskeleton.com
+HTML5 Boilerplate - http://html5boilerplate.com
+
+"Plugins em JavaScript"
+Modernizr - é uma biblioteca que permite identificar o que é suportado e o que não é suportado no navegador http://modernizr.com
+-prefix-free - uma biblioteca que altera o CSS, adicionanado apenas os prefixos necessários http://leaverou.github.com/prefixfree
+Polyfills - suporte em navegadores antigos - https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills
+
+"Pre-Processadores"
+Linguagens intermediarias que acidionam alguns recursos que ajudam a criar mais estilos com menos codigos.
+LESS - http://lesscss.org/; 
+Sass - http://sass-lang.com/; 
+Stylus - http://learnboost.github.com/stylus/;
+
+Referencias na Internet, sites que podem ajudar nos projetos
+CSS-Tricks
+A List Apart - editora A Book Apart
+When can I use... http://caniuse.com/
+HTML5 Please
+Dive into HTML5
+HTML5 Doctor

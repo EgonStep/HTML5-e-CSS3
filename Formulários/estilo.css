@@ -1,0 +1,102 @@
+/*Alinhar o formulario*/
+label {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 90px;
+}
+input, textarea {
+    display: inline-block;
+    width: 200px;
+}
+
+textarea {
+    height: 100px;
+}
+
+/*Mudar a cor e borda do formulario*/
+input, textarea {
+    border: 1px solid #CCC;
+    box-shadow: inset 2px 2px 2px #eee;
+    font-size: 0.9em;
+    padding: 2px 5px;
+}
+
+/*Adicionar estilo na class "hint" para chamar a atenção do usuario 
+(para auxilia-lo na marcação do formulario)*/
+.hint {
+    background-color: #fffbe4;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 20px;
+    padding: 3px;
+    opacity: 0; /*Remove a opacidade do elemento para esconde-lo*/
+}
+
+/*Comando usado para aparecer a mensagem do .hint apenas quando o usuario
+estiver preenchendo o formulario (separadamente)*/
+input:focus + .hint, textarea:focus + .hint {
+    margin-left: 20px;
+    opacity: 1;
+}
+
+/*Configurar uma mensagem de erro, caso o usuario não prencha o formulario*/
+.error {
+    color: red;
+    display: block;
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 5px 0 0 90px;
+}
+
+/*Criando um botao completo*/
+button {
+    background-color: #e5e5e5;
+    background-image: linear-gradient(top, #fff, #e5e5e5);
+    border: 1px solid #aaa;
+    border-radius: 1px;
+    color: #000;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/*Estilos para o estado de uso do botao*/
+button:hover {
+    background-color: #285582;
+    background-image: linear-gradient(top, #3775b3, #285582);
+    border-color: #204569;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 0 3px #3775b3; /*Sombra interna*/
+    color: #fff;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.6); /*Sombra em volta do elemento*/
+}
+
+/*Quando o botão é ativado*/
+button:active {
+    background-color: #204569;
+    background-image: none;
+    border-color: #1a3754;
+    box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+/*Dicas para as 3 regras básicas de estilos para o botão, 
+cabendo a cada um escolher qual das três seguir
+
+-Para o caso de :hover:
+1) O botão deve ficar mais claro;
+2) O botão deve ficar mais escuro;
+3) O botão deve mudar de cor
+
+-E o estado de :active
+1) O botão deve se mover 1 ou 2 px para baixo;
+2) O botão deve ter o seu gradiente (caso presente) invertido;
+3) O botão deve ficar ainda mais escuro.
+*/
+
+/*Adicionando transição*/
+.hint {
+    transition: opacity 0.5s, margin-left 0.5s;
+}
