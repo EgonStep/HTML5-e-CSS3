@@ -40,6 +40,6 @@ input {
     transform: rotateY(180deg);
 }
 
-.card .flipped {
+.card.flipped {
     transform: rotateY(180deg);
 }
